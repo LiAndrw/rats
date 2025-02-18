@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../portfolio"
+		},
+		{
+			"path": "../../../Desktop/DSC106 Proj2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "rats"
+	}
+}
