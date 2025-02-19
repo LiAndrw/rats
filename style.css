@@ -7,7 +7,9 @@ body {
 }
 
 h1 {
-  margin-bottom: 30px;
+  font-size: 30px;
+  margin: 10px 0; /* Adjust top and bottom margins */
+  padding: 5px; 
   
 }
 
@@ -29,16 +31,18 @@ h1 {
 }
 
 .toggle-btn.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
-  border: none;
+  border: black;
 }
 
 /* Chart container styling */
 #chart {
-  width: 800px;
+  width: 1200px; /* Increase width */
+  height: 800px; /* Set a height if needed */
   margin: 0 auto;
 }
+
 
 /* Tooltip styling */
 .tooltip {
@@ -51,4 +55,20 @@ h1 {
   border-radius: 8px;
   pointer-events: none;
   z-index: 1000;
+}
+
+
+
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.writeup {
+  max-width: 800px; /* Limit text width */
+  margin: auto; /* Center it */
+  text-align: justify;
+  line-height: 1.5; /* Improve readability */
+  margin-top: -350px;
 }

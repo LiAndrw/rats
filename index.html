@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>How do temperature and activity trends differ between male and female mice on estrus and non estrus days?</title>
+  <title>DSC106-Project3</title>
   <link rel="stylesheet" href="style.css">
   <!-- Include D3.js v5 -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-  <h1>How do temperature and activity trends differ between male and female mice on estrus and non estrus days?</h1>
+  <h1>How do temperature and activity level differ between male 
+    <br> and female mice on estrus and non estrus days?</h1>
   
   <div id="button-container">
-    <button id="tempBtn" class="toggle-btn active">Temperature</button>
-    <button id="actBtn" class="toggle-btn">Activity</button>
+    <button id="tempBtn" class="toggle-btn active">Temperature🌡️</button>
+    <button id="actBtn" class="toggle-btn">Activity Level📈</button>
   </div>
   
   <div id="chart"></div>
+
+  <div class="writeup"> 
+    <h2>Design Rationale</h2>
+    <p> Initially, we thought of creating a scatter plot to visualize the variations in average temperature/activity level of male mice and female mice on estrus day and non-estrus day. and  with each point representing an individual mouse. However, we later decided that a line plot would be more effective in highlighting genral trends over time and in comparing different patterns across groups. To prepare the data for visualization, we performed data wrangling to aggregate temperature and activity levels across different time points. Specifically, we averaged the temperature and activity levels of all mice within each hour, using a time interval of 0.25 hours. The data was then grouped by gender, allowing us to compare male and female mice separately. Within the female group, we further divided the data based on estrus and non-estrus days. This segmentation enabled us to observe potential differences in temperature and activity levels across these physiological states. We used different colors to differenciate these three groups of data clearly. Since we are comparing the variations in both temperature and activity level, we made this toggle button at the top that allows people to switch between differnt plots. Additioanlly, when people hover over a data point on the graph, a tooltip which displays the exact time(with 0.25hr interval), temperature/activity level for that data point would show up. This allows for precise data exploration without cluttering the main visualization.</p>
+    <h2>Development Process</h2>
+    <p> We had a group meeting on Discord to brainstorm project ideas together. After finalizing our approach, we divided the tasks among our team members. Andrew was responsible for data preprocessing, handling aggregations and formatting the dataset to fit our needs. Junhao designed and implemented the interactive visualizations, with Zifan assisting in the process. Zifan also wrote the project write-up. The actual development of the interactive visualizations was the part that took us the majority of the time. We together spent nearly 5 hours ,designing,building and testing the website.</p>
+  </div>
   
   <!-- Global JavaScript file -->
   <script src="global.js"></script>
