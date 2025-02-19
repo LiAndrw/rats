@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouse Dataset Analysis</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>How do temperature and activity trends differ between male and female mice on estrus and non estrus days?</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include D3.js v5 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-    <h1> Mouse Dataset Analysis</h1>
-    <p>Testing
-   </p>
+  <h1>How do temperature and activity trends differ between male and female mice on estrus and non estrus days?</h1>
+  
+  <div id="button-container">
+    <button id="tempBtn" class="toggle-btn active">Temperature</button>
+    <button id="actBtn" class="toggle-btn">Activity</button>
+  </div>
+  
+  <div id="chart"></div>
+  
+  <!-- Global JavaScript file -->
+  <script src="global.js"></script>
 </body>
 </html>
