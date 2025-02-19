@@ -3,10 +3,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
   text-align: center;
+  background-color: antiquewhite
 }
 
 h1 {
   margin-bottom: 30px;
+  
 }
 
 /* Button container styling */
